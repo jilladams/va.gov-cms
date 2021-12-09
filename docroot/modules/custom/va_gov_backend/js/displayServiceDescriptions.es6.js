@@ -128,15 +128,16 @@
         // If we have contents, add a label above.
         if (div.textContent.length > 0) {
           const p = context.createElement("p");
+          const d = context.createElement("div");
           p.id = `${service.id}-services-general-description`;
           p.className = "services-general-description";
           p.textContent = "General service description";
           service.after(p);
-          //adding in help text for description 
-          var d = context.createElement("div");
-          d.id = service.id + "-services-general-description-help";
+          // Adding in help text for description
+          d.id = `${service.id}-services-general-description-help`;
           d.className = "description";
-          d.textContent = "This standardized text will appear on your page automatically.";
+          d.textContent =
+            "This standardized text will appear on your page automatically.";
           p.after(d);
         }
       };

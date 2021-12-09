@@ -89,15 +89,15 @@
 
         if (div.textContent.length > 0) {
           var p = context.createElement("p");
+          var d = context.createElement("div");
           p.id = service.id + "-services-general-description";
           p.className = "services-general-description";
           p.textContent = "General service description";
           service.after(p);
 
-          var d = context.createElement("div");
           d.id = service.id + "-services-general-description-help";
           d.className = "description";
-          d.textContent = "This standardized text will appear on your page automatically.";
+          d.textContent = "This standardized text will appear on your page automatically";
           p.after(d);
         }
       };
