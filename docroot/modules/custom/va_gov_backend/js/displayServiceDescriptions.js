@@ -93,6 +93,12 @@
           p.className = "services-general-description";
           p.textContent = "General service description";
           service.after(p);
+
+          var d = context.createElement("div");
+          d.id = service.id + "-services-general-description-help";
+          d.className = "description";
+          d.textContent = "This standardized text will appear on your page automatically.";
+          p.after(d);
         }
       };
 
