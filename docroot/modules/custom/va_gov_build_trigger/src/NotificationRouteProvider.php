@@ -28,17 +28,17 @@ class NotificationRouteProvider {
     foreach ($notification_states as $state) {
       $route = new Route(
         '/api/content_release/' . $state,
-        // Defaults
+        // Defaults.
         [
           '_controller' => ContentReleaseNotificationController::class . '::' . $state,
         ],
-        // Requirements
+        // Requirements.
         [
           '_permission' => 'handle content release notifications',
         ],
-        // Options
+        // Options.
         [
-          'no_cache' => true,
+          'no_cache' => TRUE,
         ]
       );
 
@@ -47,4 +47,5 @@ class NotificationRouteProvider {
 
     return $routes;
   }
+
 }
