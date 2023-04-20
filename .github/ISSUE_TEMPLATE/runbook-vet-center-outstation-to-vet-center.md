@@ -6,6 +6,7 @@ labels: Change request, Vet Center, Facilities, User support, VA.gov frontend, D
 assignees: ''
 
 ---
+
 # Vet Center Outstation becomes a Vet Center
 ## Background
   Outstations have entries in VAST. When an Outstation becomes a full Vet Center,
